@@ -66,6 +66,9 @@ int main(int argc, char **argv)
     // Publisher
     ros::Publisher pub_data = nh.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 10);
 
+    // Wait for connection (launch)
+    ros::Duration(2).sleep();
+
     // Start X
     kill_and_spawn(nh, "turtle1", 2, 5);
     ros::Duration(1).sleep();
@@ -153,6 +156,8 @@ int main(int argc, char **argv)
     move_turtle(pub_data, -0.75, 1.0, 90);
     move_turtle(pub_data, -0.75, 1.0, 90);
     move_turtle(pub_data, -0.3, 1.0, 60);
+
+    kill_and_spawn(nh, "turtle1", 0, 0);
 
     return 0;
 }

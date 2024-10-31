@@ -1,0 +1,4 @@
+<launch>
+    <node name="turtle_publisher" pkg="turtle" type="turtle_publisher" output="screen" />
+    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen" />
+</launch>
