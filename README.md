@@ -5,6 +5,9 @@
 
 This project is related to the task as an intern software engineer in the Robotics UKM Research Team (IRIS) week 3, Robot Operating System chapter.
 
+## Demo Video
+https://github.com/user-attachments/assets/f6f01425-b187-42e6-b454-bca9d3813f9a
+
 ## How to Use
 
 ### 1. Installation
@@ -20,8 +23,8 @@ cd turtle-name
 Build with catkin_make
 
 ```bash
-source devel/setup.zsh
 catkin_make
+source devel/setup.zsh
 ```
 
 ### 2. Usage
